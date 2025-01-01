@@ -1,11 +1,11 @@
-CREATE TABLE neobank;
+CREATE DATABASE neobank;
 USE neobank;
 
 CREATE TABLE accounts(
 	account_id int AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(200) not null,
-     account_type ENUM('savings', 'current', 'business') NOT NULL,
-    account_type ENUM()
+    account_type ENUM('savings', 'current', 'business') NOT NULL
+   
 );
 CREATE TABLE savings(
     account_id int PRIMARY KEY,
